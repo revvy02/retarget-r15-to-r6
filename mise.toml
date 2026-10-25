@@ -9,7 +9,7 @@ run = "mkdir -p out && rojo build plugin.project.json -o out/R15ToR6Retargeter.r
 
 [tasks.test]
 depends = ["build"]
-run = "rodeo run --place tests/run.luau"
+run = "rodeo run tests/run.luau --place"
 
 [tasks.publish-plugin]
 description = "Publish a new Creator Store plugin version through Open Cloud"
