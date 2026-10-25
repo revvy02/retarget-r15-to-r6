@@ -17,3 +17,7 @@ https://github.com/user-attachments/assets/10827d3b-6013-4be2-902a-324efe0a4038
 ### Jump
 
 https://github.com/user-attachments/assets/3203dab5-280d-4b00-b792-8eded92c9b7e
+
+### Zombie walk
+
+https://github.com/user-attachments/assets/c2b45788-901e-41e0-94c7-46a0790c7160
