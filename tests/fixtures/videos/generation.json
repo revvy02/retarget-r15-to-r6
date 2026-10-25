@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-20T09:08:44.108065+00:00",
+  "generatedAt": "2026-10-25T17:27:45.950094+00:00",
   "converterSha256": "d51e9a1cd9963fc25360f5dc2bc4da884864f4306bb7e338dc2190a76bacc11b",
   "rendererSha256": "6cb469caf85e42119f1f91ae0673eceff12ae05db5fedce45a118d32286eee54",
   "fixtures": [
@@ -126,6 +126,48 @@
         "nb_read_frames": "144"
       },
       "generatedAt": "2026-09-20T09:08:41.244903+00:00",
+      "converterSha256": "d51e9a1cd9963fc25360f5dc2bc4da884864f4306bb7e338dc2190a76bacc11b",
+      "rendererSha256": "6cb469caf85e42119f1f91ae0673eceff12ae05db5fedce45a118d32286eee54"
+    },
+    {
+      "sourceLooped": true,
+      "seconds": 6,
+      "frames": 144,
+      "fps": 24,
+      "clipSeconds": 0.625,
+      "name": "rbx_animate_zombie_walk",
+      "fov": 35,
+      "viewport": [
+        1774,
+        789
+      ],
+      "camera": [
+        0,
+        2.403470993041992,
+        -18.736526489257812,
+        -1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        -1
+      ],
+      "sourceSha256": "6dff158cb9a7fa1ad1cf5188811a57da011f6b8695cdb4501218715d859ce8d6",
+      "uniqueCaptureFrames": 107,
+      "counterWaist": false,
+      "encoding": {
+        "codec_name": "h264",
+        "width": 1280,
+        "height": 720,
+        "pix_fmt": "yuv420p",
+        "avg_frame_rate": "24/1",
+        "duration": "6.000000",
+        "nb_read_frames": "144"
+      },
+      "generatedAt": "2026-10-25T17:27:43.854166+00:00",
       "converterSha256": "d51e9a1cd9963fc25360f5dc2bc4da884864f4306bb7e338dc2190a76bacc11b",
       "rendererSha256": "6cb469caf85e42119f1f91ae0673eceff12ae05db5fedce45a118d32286eee54"
     }

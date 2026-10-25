@@ -7,12 +7,15 @@ Each R15 KeyframeSequence has a video showing the original on the left and its R
 | Walk | [KeyframeSequence](rbx_animate_walk.rbxm) | [MP4](videos/rbx_animate_walk.mp4) |
 | Dance | [KeyframeSequence](rbx_animate_dance.rbxm) | [MP4](videos/rbx_animate_dance.mp4) |
 | Jump | [KeyframeSequence](rbx_animate_jump.rbxm) | [MP4](videos/rbx_animate_jump.mp4) |
+| Zombie walk | [KeyframeSequence](rbx_animate_zombie_walk.rbxm) | [MP4](videos/rbx_animate_zombie_walk.mp4) |
 
 [![Walk comparison](videos/rbx_animate_walk.png)](videos/rbx_animate_walk.mp4)
 
 [![Dance comparison](videos/rbx_animate_dance.png)](videos/rbx_animate_dance.mp4)
 
 [![Jump comparison](videos/rbx_animate_jump.png)](videos/rbx_animate_jump.mp4)
+
+[![Zombie walk comparison](videos/rbx_animate_zombie_walk.png)](videos/rbx_animate_zombie_walk.mp4)
 
 `r6_animate_idle1.rbxm` is a negative fixture: the converter must reject it as already R6, so it has no conversion video.
 

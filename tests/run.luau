@@ -98,7 +98,7 @@ local empty = Instance.new("KeyframeSequence")
 check(convert(empty) == nil, "Empty sequence returns nil")
 empty:Destroy()
 
-for _, name in { "rbx_animate_walk", "rbx_animate_dance", "rbx_animate_jump", "r6_animate_idle1" } do
+for _, name in { "rbx_animate_walk", "rbx_animate_dance", "rbx_animate_jump", "rbx_animate_zombie_walk", "r6_animate_idle1" } do
 	local input = roblox.import(`tests/fixtures/{name}.rbxm`)[1]
 	local result = convert(input)
 	check((result ~= nil) == (name ~= "r6_animate_idle1"), `Fixture rig detection: {name}`)
