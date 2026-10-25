@@ -1,0 +1,3 @@
+[submodule "tools/opencloud-execute"]
+	path = tools/opencloud-execute
+	url = https://github.com/Dekkonot/opencloud-luau-execute-lune.git

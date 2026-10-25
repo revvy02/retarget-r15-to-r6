@@ -1,0 +1,62 @@
+name: Release
+
+on:
+  push:
+    tags: ["v*"]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: plugin-release
+  cancel-in-progress: false
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      TAG: ${{ github.ref_name }}
+      MISE_AUTO_INSTALL: "false"
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: true
+
+      - name: Check release version
+        run: |
+          python3 - <<'PY'
+          import os
+          import tomllib
+          from pathlib import Path
+
+          tag = os.environ["TAG"]
+          wally = tomllib.loads(Path("package/wally.toml").read_text())["package"]["version"]
+          pesde = tomllib.loads(Path("package/pesde.toml").read_text())["version"]
+          if tag != f"v{wally}" or tag != f"v{pesde}":
+              raise SystemExit(f"Tag {tag!r} must match both Wally ({wally}) and pesde ({pesde}) versions")
+          PY
+
+      - name: Install build and publishing tools
+        uses: jdx/mise-action@v3
+        with:
+          install_args: "ubi:rojo-rbx/rojo ubi:lune-org/lune"
+
+      - name: Build plugin
+        run: mise run build
+
+      - name: Create GitHub release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          flags=()
+          if [[ "$TAG" == *-* ]]; then
+            flags+=(--prerelease)
+          fi
+          gh release create "$TAG" out/R15ToR6Retargeter.rbxm --verify-tag --generate-notes "${flags[@]}"
+
+      - name: Publish Creator Store version
+        if: ${{ !contains(github.ref_name, '-') }}
+        env:
+          RBX_API_KEY: ${{ secrets.RBX_API_KEY }}
+        run: mise run publish-plugin
