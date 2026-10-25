@@ -2,12 +2,9 @@
 
 Convert Roblox R15 animations to R6.
 
-Add to your `wally.toml` or `pesde.toml`, or copy the src from [`package/src/init.luau`](package/src/init.luau):
+Available on [Wally](https://wally.run/package/revvy02/retarget-r15-to-r6) and on pesde through its [Wally support](https://docs.pesde.dev/guides/dependencies/#wally-dependencies), or copy the src from [`package/src/init.luau`](package/src/init.luau).
 
-```toml
-[dependencies]
-retarget_r15_to_r6 = "revvy02/retarget-r15-to-r6@0.1.0"
-```
+Install the plugin from the [Creator Store](https://create.roblox.com/store/asset/134119833417852/R15-to-R6-Retargeter), or download the `.rbxm` from the [latest release](https://github.com/revvy02/retarget-r15-to-r6/releases/latest).
 
 ### Walk
 
