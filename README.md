@@ -2,24 +2,12 @@
 
 Convert Roblox R15 animations to R6.
 
-Add to your `wally.toml`:
+Add to your `wally.toml` or `pesde.toml`, or copy the src from [`package/src/init.luau`](package/src/init.luau):
 
 ```toml
 [dependencies]
 retarget_r15_to_r6 = "revvy02/retarget-r15-to-r6@0.1.0"
 ```
-
-Then install:
-
-```sh
-wally install
-```
-
-Require `Packages.retarget_r15_to_r6` in your project.
-
-## Comparisons
-
-R15 original on the left, R6 conversion on the right.
 
 ### Walk
 
